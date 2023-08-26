@@ -1,0 +1,475 @@
+##2 types of comments
+-->#
+--->'''
+=================================================
+++++++++++SOME PRINT() TIPS+++++++++++=
+1. print ('''
+                                    //multi line string
+                     ''')
+2. print(f"jeloo{33}")            //to print var in {}
+3. print("ek he line",end="")               //to neglect new line
+
+REPL we can use to perform calculation
+PIP is there to istall module(os, playsound)
+
+
+----------------------------------
+
+Chap-2(variable and keywords)
+-->no need to asign datype typelike int float string
+      boolean ,none
+
+--->eg a="hitu" or a= '''' "hitu" ''''  or a='hitu'
+   we can use threee method for string
+   also ''' we can use in multiple line
+
+---->type function to know the type
+   eg  type(a)---->int
+      
+----->rules for variable
+    cant start wirh no,
+    cant have a white space
+    can staart with alphabet & underscore
+
+------>on dividing we get a floating data type
+
+##type sof operator
+  arithmetic -> +,-,*,/,**   //exponention
+  assignment -> =,+=,-=,**=
+  logical    -> and,or ,not(a==b)
+  comparision-> >,>=,==(return bool value)
+  identity   -> is ,is not (same as equal to ans not equal to)
+  membership  ->in  ,not in(whether belongs to the list or not)
+
+------------------------------------------
+BASIC FUNCTION
+
+1.TYPE() //for type casting
+
+int("32")----->32
+float(32)----->32.0
+string(32)---->"32"
+list(dic)
+
++++++++++++++++input()++++++++++++++++++++++
+-->take string by default as a input
+eg->
+-->a=input(enter ur name)
+
+
+
+---------------------------------------------
+
+CHAPTER-3 STRING
+
+1. 3 WAYS TO DECALRE STRING USING QUOTES
+2. CONCATINATE STRING --> we use + with 2 string
+3. first_name + last_name[2]
+4. STRING SLICING  name[0:3] (same as name[:3])
+                        |->means from index 0 to (3-1)
+
+5.NEGETIVE INDEX 
+        NAME[-1]=NAME[length-1]
+6.SLICING WITH SKIP VALUE 
+       name[0:5:2] (hare dusra value print karega)
+       name[0: :3] (harr teesra value print karega)
+ 
+7. FUNCTIONS
+    1. len(name)
+    2. name.endswith("raj")-->return bol
+    3. string.count("a")
+    4. string.capatalize()-->capatilize 1st letter
+    5. string.find("hitu")--->return 1st index of that word
+    6. string=string.replace("hitu","great")-->replace all occurance 
+                                        hitu with great
+    7. "hitu" in string
+    8. string.strip()  //will remove all spaces
+    9.string.split("")     // will string to  convert to list (as it in immutable)
+    10."-".join(string)   // will convert back to string
+
+    
+8. escape sequence 
+      \n \t \' \\
+
+9. f string
+    print(f"fuck you{i*2} mc ")
+
+10.predifined fumc
+  isupper()
+    upper()
+  isdigit()
+
+12/ align wigth
+    str.rjust(width)   //for right align
+       .ljust()
+       .center(width."-")//by defalut its saplce
+=========================================================
+ 
++++++++++CHAPTER -4-LIST[] AND tuples() +++++++++=
+
+++++>LIST
+  1. same as aray but can have different datatypes
+    eg a=[1,2,3,4]
+      o/p a[1]-->2
+ 
+  2. we can change list index value 
+  3. it display the list in ordered format
+  4. slicing is possible i.e A[0:2]
+  5. list funcn
+      1. list.sort() //no need to assign
+      2. list.reverse()
+      3. list.append(45)
+      4. list.insert(3,8)//at inedx 3 insert 8
+      5. list.pop()//pop element frm index 2
+      6. list.remove(elem)//remove that element from the index
+      7. sum(list)
+ 6. join 2 list newlist=list1+list2
+
++++>TUPLES 
+ ------------
+T=(1,2,3,4,5)
+1. WE CANNOT CHANGE THE VALUE AT A PARTICUR INDEX not add anything after creation(not like string)(immutable)
+2.xx tuple.append()xx// will nott w orks also i.e we cant add also
+2. WE CANNOT DECALRE A TUPLE WITH A SINGLE ELEENT
+    T=(1,) (needs a comma)
+3. tuple methods
+   1. t.cout(1)
+   2. t.index("hitu")
+
+====================================================
+
+
+++++++++CHAPTER -5(DI CTIONARY AND SETS)++++++
+
+++DICTIOnARY {}
+    *has key(acts as index of array) and value paires
+    
+  1. syntax -> dict={"hitu":"coder",
+                  "sanskar":"saap",
+                   "ujwal":"empotions"
+                     }
+      eg dict["hitu"]--->coder
+
+  2. properties
+     :mutable
+     :indexed(key acts as a index)
+     :cann have duplicate valuue/keys
+
+
+  3. valus could itself be a dictionary / list type 
+  4. dict={}
+  5. methods:-
+    1.dict.keys()
+    2.dict.values()
+    3.dict.items()//we can iterate it
+    4.dict.update(a new dict or pair)//which we want to add
+    5.dict.get("hitu")//not same as dict["hitu"] as if value
+                       is not present get will return NONE
+
++++SETS:-->
+
+1.DOEST have duplicate items(if u add it will remove)
+2. doest not have index
+2. a={1,2,3,4}  //a={} will create empty dict
+3. empty sets doesnt exist rather dictionary exist
+   we neet to use a=set()
+4. methods:
+   1.a.add(23)//
+   2.len(a)
+   3.a.remove(15)
+   4.a.pop()//remove random value
+   5.a.clear()//empty 
+   6.a.union({8,11})
+   7.a.intersection({11,12}) 
+5. we can add tupple as it is immutable rather than list or dict
+6. properties
+le,unique elem(cant have list,dict)
+7.  s={20,20.00}//length will be one     noindex, unorder,uhashable/immutab
+=========================================================
+
++++++++++++== CHAPTER -6 (CONDITIONAL STATEMENTS)+++++++++
+ 
+1.if(condn):     //no need to give bracket in condn
+   vvvv..
+ elif(condn):
+   llll...
+ else:
+   .......
+
+
+2."is" is same as "="
+3."in" for a element/substring in list
+==============================================================
+ ++++++++++++++CHAPTER 7(LOOP)+++++++++++++++++
+
+2 LOOPS ARE THERE
+
+1.WHILE
+
+  Syntax:  while cond:
+             .....
+             .....
+
+2.FOR LOOP
+   - we can easily traverse in list, tuples
+
+   -range(start,stop,stepsize)  //from start to stop-1
+  
+   - "break" statment   // come out of for liipp withou executing optional else
+   - "continue"         //it will come out of current iteration and will noe execute
+                          the stat below it 
+   - "pass"             //do nothing //if we want to ignore it
+
+   Syntax
+          1. for (i in list) :
+                  print(i)            //i hoga naaaki lists[i]*
+
+          2. for(item in range(start,end+1,skip)):  //from 0 to end*
+                 .........
+             else:
+                will execute after successful execution of loop
+                and not execute if break is executed
+                           
+
+=================================================================
++++++++++++++++++++CHAPTER 8(FUNCTION+RECURSION)+++++++++++++++++
+1.Function
+  syntax:     def function(name):
+   
+               return x 
+
+
+//how to pass list and return its every content
+
+2. Reccursion
+
+   need to have formula
+
+===========================================================
+
+++++++++++++++++++chap 9 (file i/0)++++++++++++++++++
+
+-> 2types of files
+     binary 
+     text
+-->opening a file
+     f= open("file.txt",mode) 
+
+      mode ->r(read),w(write),a(append),+(update)
+            binary- rb,wb,ab,+b
+            text file -rt,
+    //always close the file at the end
+
+-->reading a file
+
+    data=f.read(5)   //read 5 characters
+     data=f.readline(5) //read 1st line
+
+--->write a file
+       
+        f.write()
+      
+
+--->close a file
+
+       f.close()
+
+
+--->the best way to oipen a file is using "with" statement
+     as it closes automatically
+    with open("lora.txt",a) as f:
+
+
+--> delete a file // we need to import os module
+
+   os.remove("filename")
+
+===================================================================
+
+++++++++++++++CHAP-10 OOPS++++++++++++++++++++++++++|
+
+-> DRY principle "do not repeat"
+
+--> class name is uysally PascalCase(all first letter is capital)//not camel case
+
+---> object is a real world entity
+ --> encapsulation
+----> abstraction
+------------------------------------------
+
+--> attribute(data members) 
+    no need to write in class(ie class attribute)
+             ->can change with class name  no need of object i.e class.name()
+                 
+    we can directly use it (ie instance attribute)
+            --> need to create object to modify i.e obj.name
+---------------------------------------
+---> function call has bydefault 1 argumeent in it
+      so we need to revieve func(self) in the define stage
+     
+----------------------------------------
+--->@staticmethod
+       if we dont need to have self then we can use this
+        eg    @staticmethod
+              def freess():
+                  print("lora")
+         
+     
+       calll::==>   obj.frees()//class.frees()
+ --------------------------------------                    
+---> constructor 
+   
+    def __init__(self,arg1,arg2):
+
+note  we can change the name of "self" to any name
+
+=======================================================================
+++++++++++++++++++++++cahpter 11(inheritance)++++++++++++++++++++
+    
+3 types of inheritence
+
+ 1 simple
+ 2  multiple
+ 3  multileevel
+-------------------------------------
+
+syntax:  class child(pareent1,parent2)  //parent1 wil be given more priority
+----------------------------------------
+---> super() keyword
+            
+     * use to refere the parent class 
+       eg.  super().takebereath()
+            super().__init__()
+
+-----------------------------------
+
+@clasmethod
+
+since if we refer to self.name=name //here it will create a new name 
+                                      attribut istead of having a class  atrribute name
+
+so we use to refer the classs atrrivurrte instead of instance attribute
+ 
+syntax :   @classmethod
+           def changename(cls,name)
+               cls.name=name
+---------------------------------------
+@setter and @gettter
+for getter we use---------> @property
+                            def salary_change(self) //it is a attribute
+                               retrun dasalary*change
+
+for seeter------------------>@attribute_name.setter
+                              def  attributr(self,attr)
+                                   return ora       
+
+  
+
+---------------------------------
+operator overloading
+   obj1+obj2=obj1.__add__(obj2)
+   obj1*obj2=obj1.__mul__(obj2)
+   obj1/obj2=obj1.__freediv__(obj2)
+   obj1//obj2=obj1.__floordiv__(obj2)
+
+
+-------------------------------------
+some magic/dunder dunction
+__len()__  /when we call len(obj) what wil display
+__str()__  //we can print anything for the object 
+
+===============================================================================
+++++++++++++ADVANCE PYHTON 1++++++++++++++++++++++++++++++++++++++++++++++=
+
+---->try except
+          try:
+              #
+          except:        //will handle all exception ie valueerror or zerodivisionerror
+
+
+--->else : is use to check that  excetion is  not occur i.e only try block is used
+
+---> final:  will execute every time wheter except ocuur ot not
+
+---> we can raise our own error by raise keyword
+
+---------------------------------------------------------------
+__name__=="__main__"
+
+when we import a file the code below main will not be executed
+
+---------------------------------------------------------------
+enumerated:
+if we need index in a list
+
+syntax:  for index,item in enumerate(list):
+                  print(index.item)
+
+--------------------------------------------------------------
+gloabal keyword
+
+inside a scopee we neeed to call 
+ global var
+--------------------------------------------------------------
+list comprehension
+
+
+to append the list shortcut is used
+b=[i for i in a if i%2==0]
+or
+b=[i for i in a ]
+
+
+//is same as 
+
+  for i in a
+    if(i%2==0)
+        b.append(i)
+
+====================================================================================
+
++++++++++++++++++++++chap 13 virtual+++++++++++++++++++++++++++++++++++++++++++==
+
+-->virtual env
+
+    pip install virtualenv
+     virtualenv hitu
+
+---> pip freeze // to show all module
+
+-->pip install -r requirment.txt
+         
+----------------------------------------------------
+--->lambda function to define function in one line
+
+   syntax funcname = lambda arg:expsn(to return)
+
+----------------------------------------------------
+--->join method and format method
+       
+      1.  "and".join
+      
+       2. template="hi i am there {}".format(name) 
+
+-------------------------------------------------
+-->map filter and reduce
+
+         1.newlist=list(map(func,list))  //map will map the funcn to the list
+          
+         2.newlist=list(filer(lambda a:a>5,list)) // funcn can be labda function
+    
+         3. newval=reduce(max ,list)   //we need to import lib from functool      
+
+
+
+          
+tensor flow
+tailwind
+scikit learn
+sklearn
+actual and predicted confusion matrix
+
+java script vs java
+react
+node js
+mongo db
